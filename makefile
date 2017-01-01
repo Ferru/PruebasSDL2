@@ -8,7 +8,7 @@ SDL_CFLAGS := $(shell sdl2-config --cflags)
 SDL_LDFLAGS := $(shell sdl2-config --libs)
 
 #OBJS specifies which files to compile as part of the project
-OBJS = $(SRC_DIR)hello_SDL.cpp
+OBJS = $(SRC_DIR)getting_image.cpp
 #CC specifies which compiler we're using
 CC = g++
 #COMPILER_FLAGS specifies the additional compilation options we're using
@@ -17,7 +17,7 @@ COMPILER_FLAGS = -w $(SDL_CFLAGS)
 #LINKER_FLAGS specifies the libraries we're linking against
 LINKER_FLAGS = $(SDL_LDFLAGS)
 #OBJ_NAME specifies the name of our exectuable
-OBJ_NAME = hello_SDL
+OBJ_NAME = loading_image
 DEBUG_OBJ_NAME = $(DEBUG_DIR)$(OBJ_NAME)
 RELEASE_OBJ_NAME = $(RELEASE_DIR)$(OBJ_NAME)
 #This is the target that compiles our executable
