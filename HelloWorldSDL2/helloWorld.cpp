@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
   //Initialize SDL
   if(SDL_Init( SDL_INIT_VIDEO) < 0)
     {
-      printf("SDL could not initialize! SDL_ERROR: %s\n", SDL_GetError()); 
+      printf("SDL could not initialize! SDL_ERROR: %s\n", SDL_GetError());
     }
   else
     {
@@ -35,12 +35,12 @@ int main(int argc, char* argv[])
 	  SDL_Delay(2000);
 	  //Destroy window
 	}
-      
+
     }
   //Destroy window
   SDL_DestroyWindow(window);
   //Quit SDL subsystems
   SDL_Quit();
   return 0;
-  
+
 }

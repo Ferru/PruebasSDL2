@@ -104,7 +104,7 @@ bool loadMedia()
       success = false;
     }
   return success;
-  
+
 }
 
 void close()
